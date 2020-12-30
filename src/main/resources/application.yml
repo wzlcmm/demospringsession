@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  redis:
+    host: 192.168.188.146
+    port: 6379
+    password: offcn123
+  session:
+    store-type: redis  #保存session信息到redis
+    timeout: 1000 #设置过期时间1000秒 单位：秒
+  thymeleaf:
+    cache: false
